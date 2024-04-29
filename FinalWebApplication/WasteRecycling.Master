@@ -21,8 +21,15 @@
 <body>
     <div class="homepage">
     <header> 
-              <a class="navbar">
-  <div class="logo">Logo</div>
+        <div class="navbar">
+            <span> <img src="/logo.png" alt="Website logo" class="logo"/></span>
+            <span class="navbar-child home"><a href="WebForm1.aspx">Home</a></span>
+            <span class="navbar-child types-of-waste"><a href="Types_of_waste.aspx">Types of waste</a></span>
+            <span class="navbar-child discussion"><a href="discussion.aspx">Discussion</a></span>
+            <span class="navbar-child how-to-recycle"><a href="how_to_recycle.aspx">How to recycle</a></span>
+            <span class="join">Join</span>
+
+  <!-- <div class="logo">Logo</div>
   <div class="navbar-child"></div>
   <div class="navbar-item"></div>
   <div class="navbar-inner"></div>
@@ -53,11 +60,11 @@
         </div>
       </div>
     </div>
-  </div>
-</a>
-    </header>
+  </div> -->
+    </div> 
+</header>
   <main>
-      <a href="ShowTable.aspx"> Show users </a>
+      <!--<a href="ShowTable.aspx"> Show users </a>-->
       <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
 </asp:ContentPlaceHolder> 
   </main>     
@@ -67,10 +74,10 @@
       <div class="recycle-now-all">
         © 2024 Recycle now. All rights reserved.
       </div>
-      <div class="about">About</div>
-      <div class="contact-us">Contact Us</div>
-      <div class="privacy-policy">Privacy Policy</div>
-      <img class="instagram-icon" alt="instagram" src="./public/instagram.svg" />
+      <div class="about"><a href="HTMLPage1.html">About</a></div>
+      <div class="contact-us"><a>Contact Us</a></div>
+      <div class="privacy-policy"><a>Privacy Policy</a></div>
+      <a href="https://www.instagram.com/gelyaustinova16?igsh=OXk4MWJ6OXBxcW9i&utm_source=qr"><img class="instagram-icon" alt="instagram" src="./public/instagram.svg" /></a>
       </div>
   </footer>
        

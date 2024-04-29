@@ -109,6 +109,9 @@
     </Content>
     <Content Include="Calculator.aspx" />
     <Content Include="Calculator.js" />
+    <Content Include="discussion.aspx" />
+    <Content Include="how_to_recycle.aspx" />
+    <Content Include="logo.png" />
     <Content Include="JavaScript.js" />
     <Content Include="public\chevron.svg" />
     <Content Include="Contact.aspx" />
@@ -166,11 +169,13 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="ShowTable.aspx" />
+    <Content Include="Types_of_waste.aspx" />
     <Content Include="WasteRecycling.Master" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="web_form_base.css" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -236,8 +241,22 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="discussion.aspx.cs">
+      <DependentUpon>discussion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="discussion.aspx.designer.cs">
+      <DependentUpon>discussion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="how_to_recycle.aspx.cs">
+      <DependentUpon>how_to_recycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="how_to_recycle.aspx.designer.cs">
+      <DependentUpon>how_to_recycle.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShowTable.aspx.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
@@ -245,6 +264,13 @@
     </Compile>
     <Compile Include="ShowTable.aspx.designer.cs">
       <DependentUpon>ShowTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Types_of_waste.aspx.cs">
+      <DependentUpon>Types_of_waste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Types_of_waste.aspx.designer.cs">
+      <DependentUpon>Types_of_waste.aspx</DependentUpon>
     </Compile>
     <Compile Include="WasteRecycling.Master.cs">
       <DependentUpon>WasteRecycling.Master</DependentUpon>
