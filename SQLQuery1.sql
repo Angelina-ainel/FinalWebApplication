@@ -1,0 +1,1 @@
+﻿SELECT username, firstName, lastName, yearBorn FROM usersTbl WHERE usersTbl.yearBorn > 1990
