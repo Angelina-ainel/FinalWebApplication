@@ -1,14 +1,11 @@
-﻿.web-form-body {
-    position: absolute;
+﻿.web-form-body{
+    position:absolute;
     top: 110px;
-    align-content: center;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Inter';
     font-style: normal;
     text-align: center;
     color: var(--color-darkolivegreen);
 }
-
-

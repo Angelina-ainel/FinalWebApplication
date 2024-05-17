@@ -27,7 +27,7 @@
             <span class="navbar-child types-of-waste"><a href="Types_of_waste.aspx">Types of waste</a></span>
             <span class="navbar-child discussion"><a href="discussion.aspx">Discussion</a></span>
             <span class="navbar-child how-to-recycle"><a href="how_to_recycle.aspx">How to recycle</a></span>
-            <span class="join">Join</span>
+            <span class="join"><a href="Registration_form.aspx">Join</a></span>
 
   <!-- <div class="logo">Logo</div>
   <div class="navbar-child"></div>

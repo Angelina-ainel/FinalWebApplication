@@ -1,0 +1,64 @@
+﻿.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #003205;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #003205;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="number"]:hover,
+    select:hover {
+        box-shadow: 0 0 7px rgba(74, 198, 30, 0.68);
+    }
+
+input[type="submit"] {
+    background-color: rgba(74, 198, 30, 0.68);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 22px);
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    input[type="submit"]:hover {
+        background-color: #003205;
+    }
+
+.phone-prefix-container {
+    display: flex;
+}
+
+.phone-prefix-label {
+    flex: 1;
+}
+
+.phone-prefix-select {
+    flex: 2;
+}
