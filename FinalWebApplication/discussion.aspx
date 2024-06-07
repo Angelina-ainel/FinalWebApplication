@@ -12,7 +12,5 @@
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
 />
 
-<div class="web-form-body">
-    <p> I'm not entirely sure what is goingto happen here...</p>
-</div>
+    <p> I'm not entirely sure what is going to happen here...</p>
 </asp:Content>

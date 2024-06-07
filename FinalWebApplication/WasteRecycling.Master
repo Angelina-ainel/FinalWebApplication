@@ -9,6 +9,7 @@
     <title> Waste recycling </title>
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./web_form_base.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
@@ -20,7 +21,7 @@
 </head>
 <body>
     <div class="homepage">
-    <header> 
+        <header> 
         <div class="navbar">
             <span> <img src="/logo.png" alt="Website logo" class="logo"/></span>
             <span class="navbar-child home"><a href="WebForm1.aspx">Home</a></span>
@@ -28,53 +29,19 @@
             <span class="navbar-child discussion"><a href="discussion.aspx">Discussion</a></span>
             <span class="navbar-child how-to-recycle"><a href="how_to_recycle.aspx">How to recycle</a></span>
             <span class="join"><a href="Registration_form.aspx">Join</a></span>
-
-  <!-- <div class="logo">Logo</div>
-  <div class="navbar-child"></div>
-  <div class="navbar-item"></div>
-  <div class="navbar-inner"></div>
-  <div class="home">Home</div>
-  <div class="discussion">Discussion</div>
-  <div class="how-to-recycle"> <a href="./WebForm2.aspx"> How to recycle </a></div>
-  <div class="rectangle-div"></div>
-  <div class="join">Join</div>
-  <div class="listbox-component">
-    <div class="listbox-title">
-      <div class="types-of-waste">Types of waste</div>
-    </div>
-    <div class="listbox-main">
-      <div class="listboxbg"></div>
-      <img class="chevron-icon" alt="dropdown-arrow" src="./public/chevron.svg" />
-
-      <div class="placeholder-text">
-        <div class="types-of-waste1">Types of waste</div>
-      </div>
-    </div>
-    <div class="clip-list">
-      <div class="dropdown-list">
-        <div class="item-1">
-          <div class="div">Recyclable waste</div>
-        </div>
-        <div class="item-1">
-          <div class="div">Non-recyclable waste</div>
-        </div>
-      </div>
-    </div>
-  </div> -->
     </div> 
 </header>
   <main>
       <!--<a href="ShowTable.aspx"> Show users </a>-->
       <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
 </asp:ContentPlaceHolder> 
-  </main>     
-  <footer>
+  </main>
+        <footer>
       <div class="footer">
-      <div class="footer-child"></div>
-      <div class="recycle-now-all">
+      <div class="all-rights-reserved">
         © 2024 Recycle now. All rights reserved.
       </div>
-      <div class="about"><a href="HTMLPage1.html">About</a></div>
+      <div class="about"><a href="ShowTable.aspx">About</a></div>
       <div class="contact-us"><a>Contact Us</a></div>
       <div class="privacy-policy"><a>Privacy Policy</a></div>
       <a href="https://www.instagram.com/gelyaustinova16?igsh=OXk4MWJ6OXBxcW9i&utm_source=qr"><img class="instagram-icon" alt="instagram" src="./public/instagram.svg" /></a>

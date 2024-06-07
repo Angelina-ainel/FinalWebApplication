@@ -1,7 +1,7 @@
-﻿.web-form-body {
-    position: absolute;
-    top: 110px;
+﻿.web-form-page {
     align-content: center;
+    padding: 110px 20px 20px 100px;
+    flex: 1;
 }
 
 h1 {

@@ -13,7 +13,5 @@
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
 />
 
-<div class="web-form-body">
     <h1> There will be some useful information abount different types of waste</h1>
-</div>
 </asp:Content>

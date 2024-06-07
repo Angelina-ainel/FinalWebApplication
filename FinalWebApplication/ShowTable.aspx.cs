@@ -45,6 +45,7 @@ namespace FinalWebApplication
                 st += "<th> hobby 2 </th>";
                 st += "<th> hobby 3 </th>";
                 st += "<th> hobby 4 </th>";
+                st += "<th> Having pets </th>";
                 st += "<tr>";
             }
             for (int i = 0; i < length; i++)
@@ -64,6 +65,7 @@ namespace FinalWebApplication
                 st += "<td>" + table.Rows[i]["hobby2"] + "</td>";
                 st += "<td>" + table.Rows[i]["hobby3"] + "</td>";
                 st += "<td>" + table.Rows[i]["hobby4"] + "</td>";
+                st += "<td>" + table.Rows[i]["havingPets"] + "</td>";
                 st += "</tr>";
             }
             

@@ -113,8 +113,10 @@
     <Content Include="global.css" />
     <Content Include="how_to_recycle.aspx" />
     <Content Include="index.css" />
+    <Content Include="JavaScript_registration.js" />
     <Content Include="logo.png" />
     <Content Include="JavaScript.js" />
+    <Content Include="MasterTemplate.html" />
     <Content Include="public\chevron.svg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -139,6 +141,7 @@
     <Content Include="Global.asax" />
     <Content Include="registration_form_design.css" />
     <Content Include="registration_form_test.html" />
+    <Content Include="styles.css" />
     <Content Include="stylesheets\global.css" />
     <Content Include="public\image-1%402x.png" />
     <Content Include="stylesheets\index.css" />

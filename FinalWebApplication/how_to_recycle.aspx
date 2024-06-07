@@ -12,7 +12,5 @@
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
 />
 
-<div class="web-form-body">
     <p> On this page I'm going to dispay some vital information</p>
-</div>
 </asp:Content>
