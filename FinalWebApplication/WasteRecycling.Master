@@ -18,17 +18,35 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
     />
+    <script>
+        setInterval("myTimer()", 10)
+        function myTimer() {
+            var d = new Date();
+            var t1 = d.toLocaleDateString();
+            var t2 = d.toLocaleTimeString();
+            var t = t1 + "‹br /›" + t2;
+            document.getElementById("myDate").innerHTML = t1;
+            document.getElementById("myTime").innerHTML = t2;
+
+        }
+    </script>
 </head>
 <body>
     <div class="homepage">
         <header> 
-        <div class="navbar">
+        <span class="message">
+            <%=loginMsg %>
+        </span>
+        <!-- <span id="myDate" class="datetime date"></span>
+        <span id="myTime" class="datetime time"></span> -->
+            <div class="navbar">
             <span> <img src="/logo.png" alt="Website logo" class="logo"/></span>
             <span class="navbar-child home"><a href="WebForm1.aspx">Home</a></span>
             <span class="navbar-child types-of-waste"><a href="Types_of_waste.aspx">Types of waste</a></span>
-            <span class="navbar-child discussion"><a href="discussion.aspx">Discussion</a></span>
+            <span class="navbar-child discussion"><a href="discussion.aspx"> Calculator </a></span>
             <span class="navbar-child how-to-recycle"><a href="how_to_recycle.aspx">How to recycle</a></span>
-            <span class="join"><a href="Registration_form.aspx">Join</a></span>
+            <span class="registration-and-login log-in"><a href="Login_form.aspx">Log in</a></span>
+            <span class="registration-and-login join"><a href="Registration_form.aspx">Sign up</a></span>
     </div> 
 </header>
   <main>
@@ -41,6 +59,8 @@
       <div class="all-rights-reserved">
         © 2024 Recycle now. All rights reserved.
       </div>
+    <span id="myDate" class="datetime date"></span>
+    <span id="myTime" class="datetime time"></span>
       <div class="about"><a href="ShowTable.aspx">About</a></div>
       <div class="contact-us"><a>Contact Us</a></div>
       <div class="privacy-policy"><a>Privacy Policy</a></div>

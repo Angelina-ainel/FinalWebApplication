@@ -8,6 +8,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Runtime.Remoting.Messaging;
 
 namespace FinalWebApplication
 {
@@ -15,6 +18,9 @@ namespace FinalWebApplication
     {
 
         public string st = "";
+        public string msg = "";
+        public string sqlMsg = "";
+        public string yearBorn = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,12 +43,61 @@ namespace FinalWebApplication
                 string hobby2 = Request.Form["hobby2"];
                 string hobby3 = Request.Form["hobby3"];
                 string hobby4 = Request.Form["hobby4"];
-                string havingPets = Request.Form["pets"];
-
+                string city = Request.Form["city"];
+                string HavingPets = Request.Form["pets"];
+                bool havingPets = false;
+                if (HavingPets == "yes")
+                    havingPets = true;
+                else
+                    havingPets = false;
                 string fileName = "First_UsersDB.mdf";
-                string tableName = "usersTbl";
-                string sqlSelect = $"SELECT * FROM {tableName} WHERE username ='{username}'";
-                
+                string usersTable = "usersTbl";
+                string citiesTable = "citiesTbl";
+                string sqlSelect = $"SELECT * FROM {usersTable} WHERE username ='{username}'";
+                if (DBHelper.Find(fileName, sqlSelect))
+                {
+                    msg = "This username has already been taken, please create a new one";
+                    sqlMsg = sqlSelect;
+                }
+                else
+                {
+                    string CitiesQuery = $"select Id from {citiesTable} where cityName = '{city}'";
+                    Console.WriteLine(CitiesQuery);
+                    SqlConnection connection = DBHelper.ConnectToDb(fileName);
+                    connection.Open();
+                    SqlCommand com = new SqlCommand(CitiesQuery, connection);
+
+                    SqlDataReader reader = com.ExecuteReader();
+                    int cityId = 0;
+                    Console.WriteLine(reader.Read());
+                    if (reader.Read())
+                        cityId = (int)reader.GetValue(0);
+                    else
+                    {
+                        reader.Close();
+                        com.Dispose();
+                        string addNewCity = $"insert into {citiesTable} values ('{city}')";
+                        DBHelper.DoQuery(fileName, addNewCity);
+                        
+                        SqlCommand com2 = new SqlCommand(CitiesQuery, connection);
+
+                        SqlDataReader reader2 = com.ExecuteReader();
+                        Console.WriteLine(reader2.Read());
+                        cityId = (int)reader2.GetValue(0);
+                        reader2.Close();
+                        com2.Dispose();
+                    }
+                    Console.WriteLine(cityId);
+                    
+                    connection.Close();
+
+                    string sqlInsert = $"insert into {usersTable} ";
+                    sqlInsert += $"values ('{username}', '{firstName}', '{lastName}', '{email}', '{birthYear}', " +
+                        $"'{gender}', '{prefix}', '{phone}', '{hobby1}', '{hobby2}', '{hobby3}', '{hobby4}', '{cityId}', '{havingPets}')";
+                    sqlMsg = sqlInsert;
+                    DBHelper.DoQuery(fileName, sqlInsert);
+                    msg = "You were successfully registered on our website!";
+                }
 
                 st += "<tr><td> user name: </td><td>" + username + "</td></tr>";
                 st += "<tr><td> first name: </td><td>" + firstName + "</td></tr>";
@@ -62,7 +117,7 @@ namespace FinalWebApplication
                 if (hobby4 != "")
                     st += "<tr><td> hobby4: </td><td>" + hobby4 + "</td></tr>";
 
-                st += "<tr><td> having pets: </td><td>" + havingPets + "</td></tr>"; 
+                st += "<tr><td> having pets: </td><td>" + HavingPets + "</td></tr>"; 
 
 
             }

@@ -18,5 +18,21 @@ namespace FinalWebApplication
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
+        void Session_Start(object sender, EventArgs e)
+        { 
+        Session["username"] = "guest";
+        Session["firstName"] = "guest";
+        Session["userToDel"] = "";
+        Session["admin"] = "no";
+        }
+
+        void Session_End(object sender, EventArgs e)
+        {
+        Session["username"] = "guest";
+        Session["firstName"] = "guest";
+        Session["userToDel"] = "";
+        Session["admin"] = "no";
+        }
+
     }
 }

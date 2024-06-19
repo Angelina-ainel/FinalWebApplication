@@ -23,9 +23,9 @@ using System.Collections.Generic;
 public class DBHelper
 {
 
-    public const string DB_FILENAME = "CactiDB.mdf";
+    public const string DB_FILENAME = "First_UsersDB.mdf";
     public const string DB_USER_TABLE = "usersTbl";
-    public const string DB_ADMIN_TABLE = "managerTbl";
+    public const string DB_CITIES_TABLE = "CitiesTbl";
 
     public static SqlConnection ConnectToDb(string fileName)
     {

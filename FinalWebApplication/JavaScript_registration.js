@@ -4,13 +4,6 @@
     var lastName = document.getElementById("lastName").value;
     var phone = document.getElementById("phone").value;
 
-    console.log("Checking form...");  // Debugging line
-    console.log("Username:", username);  // Debugging line
-    console.log("FirstName:", firstName);  // Debugging line
-    console.log("LastName:", lastName);  // Debugging line
-    console.log("Phone:", phone);  // Debugging line
-
-    // Clear previous validation messages
     document.getElementById("invUsername").innerHTML = "";
     document.getElementById("invFirstName").innerHTML = "";
     document.getElementById("invLastName").innerHTML = "";
@@ -34,8 +27,6 @@
         document.getElementById("invPhone").innerHTML = "There must be exactly 7 digits in the phone number.";
         isValid = false;
     }
-
-    console.log("Is valid:", isValid);  // Debugging line
 
     return isValid;
 }

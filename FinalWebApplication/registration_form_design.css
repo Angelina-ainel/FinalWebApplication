@@ -14,6 +14,12 @@ label {
     color: #003205;
 }
 
+.required-label::after{
+    content: " *";
+    color: darkred;
+    font-weight: bold;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -43,8 +49,8 @@ input[type="submit"] {
     width: calc(100% - 22px);
     margin-top: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;*/
+    margin-right: 10px;
 }
 
     input[type="submit"]:hover {
@@ -61,5 +67,41 @@ input[type="submit"] {
 
 .phone-prefix-select {
     flex: 2;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .radio-container label {
+        margin-right: 10px;
+    }
+
+.validation-message {
+    padding: 10px;
+    margin: 20px;
+    display: inline;
+}
+
+#invUsername {
+    position: absolute;
+    top: 325px;
+}
+
+#invFirstName {
+    position: absolute;
+    top: 400px;
+}
+
+#invLastName {
+    position: absolute;
+    top: 475px;
+}
+
+#invPhone {
+    position: absolute;
+    top: 800px;
 }
 

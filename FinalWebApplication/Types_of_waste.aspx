@@ -12,6 +12,8 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
 />
-
-    <h1> There will be some useful information abount different types of waste</h1>
+    <section class="image-section">
+       <img src="types_of_waste.jpg" alt="different types of waste"/>
+       <p> Examples of different types of waste</p>
+   </section>
 </asp:Content>

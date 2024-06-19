@@ -114,8 +114,10 @@
     <Content Include="how_to_recycle.aspx" />
     <Content Include="index.css" />
     <Content Include="JavaScript_registration.js" />
+    <Content Include="Login_form.aspx" />
     <Content Include="logo.png" />
     <Content Include="JavaScript.js" />
+    <Content Include="Logout.aspx" />
     <Content Include="MasterTemplate.html" />
     <Content Include="public\chevron.svg" />
     <Content Include="Contact.aspx" />
@@ -139,12 +141,11 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="recycling_process.jpg" />
     <Content Include="registration_form_design.css" />
     <Content Include="registration_form_test.html" />
     <Content Include="styles.css" />
-    <Content Include="stylesheets\global.css" />
     <Content Include="public\image-1%402x.png" />
-    <Content Include="stylesheets\index.css" />
     <Content Include="index.html" />
     <Content Include="public\instagram.svg" />
     <Content Include="Registration_form.aspx" />
@@ -183,7 +184,6 @@
     <Content Include="README.md" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
-    <Content Include="stylesheets\web_form_base.css" />
     <Content Include="web_form_base.css" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -266,6 +266,20 @@
     </Compile>
     <Compile Include="how_to_recycle.aspx.designer.cs">
       <DependentUpon>how_to_recycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login_form.aspx.cs">
+      <DependentUpon>Login_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login_form.aspx.designer.cs">
+      <DependentUpon>Login_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registration_form.aspx.cs">
       <DependentUpon>Registration_form.aspx</DependentUpon>

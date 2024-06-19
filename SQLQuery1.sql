@@ -1,1 +1,1 @@
-﻿SELECT username, firstName, lastName, yearBorn FROM usersTbl WHERE usersTbl.yearBorn > 1990
+﻿select Id from CitiesTbl where cityName='Capetown'
