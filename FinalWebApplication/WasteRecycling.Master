@@ -30,15 +30,14 @@
 
         }
     </script>
+    <script src="Calculator.js" defer></script>
 </head>
-<body>
+<body onload="generateRandomNumbers()">
     <div class="homepage">
         <header> 
         <span class="message">
             <%=loginMsg %>
         </span>
-        <!-- <span id="myDate" class="datetime date"></span>
-        <span id="myTime" class="datetime time"></span> -->
             <div class="navbar">
             <span> <img src="/logo.png" alt="Website logo" class="logo"/></span>
             <span class="navbar-child home"><a href="WebForm1.aspx">Home</a></span>

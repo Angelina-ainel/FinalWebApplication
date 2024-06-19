@@ -11,9 +11,9 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
 />
-    <script src="calculator.js" defer></script>
+    <script src="Calculator.js" defer></script>
     <h1>Math Calculator</h1>
-<section onload="generateRandomNumbers()">
+<section>
     <div class="calculator-container">
 
     <form id="calculator-form">
@@ -53,5 +53,4 @@
     </form>
     </div>
 </section>
-
 </asp:Content>
